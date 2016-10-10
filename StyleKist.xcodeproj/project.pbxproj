@@ -14,6 +14,9 @@
 		2493F2DC1DABC85000CBCC08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2493F2DA1DABC85000CBCC08 /* LaunchScreen.storyboard */; };
 		2493F2E71DABC85000CBCC08 /* StyleKistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2493F2E61DABC85000CBCC08 /* StyleKistTests.swift */; };
 		2493F2F21DABC85100CBCC08 /* StyleKistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2493F2F11DABC85100CBCC08 /* StyleKistUITests.swift */; };
+		2493F3001DABCA6B00CBCC08 /* landing_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2493F2FF1DABCA6B00CBCC08 /* landing_video.mp4 */; };
+		2493F3011DABCA6B00CBCC08 /* landing_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2493F2FF1DABCA6B00CBCC08 /* landing_video.mp4 */; };
+		2493F3021DABCA6B00CBCC08 /* landing_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2493F2FF1DABCA6B00CBCC08 /* landing_video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		2493F2ED1DABC85000CBCC08 /* StyleKistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyleKistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2493F2F11DABC85100CBCC08 /* StyleKistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleKistUITests.swift; sourceTree = "<group>"; };
 		2493F2F31DABC85100CBCC08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2493F2FF1DABCA6B00CBCC08 /* landing_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = landing_video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				2493F2D01DABC85000CBCC08 /* StyleKist */,
+				2493F3031DABCA8400CBCC08 /* Resources */,
 				2493F2E51DABC85000CBCC08 /* StyleKistTests */,
 				2493F2F01DABC85100CBCC08 /* StyleKistUITests */,
 				2493F2CF1DABC85000CBCC08 /* Products */,
@@ -123,6 +128,15 @@
 				2493F2F31DABC85100CBCC08 /* Info.plist */,
 			);
 			path = StyleKistUITests;
+			sourceTree = "<group>";
+		};
+		2493F3031DABCA8400CBCC08 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2493F2FF1DABCA6B00CBCC08 /* landing_video.mp4 */,
+			);
+			name = Resources;
+			path = StyleKist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +252,7 @@
 				2493F2DC1DABC85000CBCC08 /* LaunchScreen.storyboard in Resources */,
 				2493F2D91DABC85000CBCC08 /* Assets.xcassets in Resources */,
 				2493F2D71DABC85000CBCC08 /* Main.storyboard in Resources */,
+				2493F3001DABCA6B00CBCC08 /* landing_video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2493F3011DABCA6B00CBCC08 /* landing_video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2493F3021DABCA6B00CBCC08 /* landing_video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
