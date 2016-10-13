@@ -17,6 +17,9 @@
 		2493F3001DABCA6B00CBCC08 /* landing_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2493F2FF1DABCA6B00CBCC08 /* landing_video.mp4 */; };
 		2493F3011DABCA6B00CBCC08 /* landing_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2493F2FF1DABCA6B00CBCC08 /* landing_video.mp4 */; };
 		2493F3021DABCA6B00CBCC08 /* landing_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2493F2FF1DABCA6B00CBCC08 /* landing_video.mp4 */; };
+		2493F3051DAC236500CBCC08 /* LandingVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2493F3041DAC236500CBCC08 /* LandingVideoViewController.swift */; };
+		2493F3081DAC736900CBCC08 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2493F3071DAC736900CBCC08 /* AVKit.framework */; };
+		2493F30A1DAEBBE800CBCC08 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2493F3091DAEBBE800CBCC08 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		2493F2F11DABC85100CBCC08 /* StyleKistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleKistUITests.swift; sourceTree = "<group>"; };
 		2493F2F31DABC85100CBCC08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2493F2FF1DABCA6B00CBCC08 /* landing_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = landing_video.mp4; sourceTree = "<group>"; };
+		2493F3041DAC236500CBCC08 /* LandingVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingVideoViewController.swift; sourceTree = "<group>"; };
+		2493F3071DAC736900CBCC08 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		2493F3091DAEBBE800CBCC08 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2493F30A1DAEBBE800CBCC08 /* AVFoundation.framework in Frameworks */,
+				2493F3081DAC736900CBCC08 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +94,7 @@
 				2493F2E51DABC85000CBCC08 /* StyleKistTests */,
 				2493F2F01DABC85100CBCC08 /* StyleKistUITests */,
 				2493F2CF1DABC85000CBCC08 /* Products */,
+				2493F3061DAC736900CBCC08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				2493F2D11DABC85000CBCC08 /* AppDelegate.swift */,
+				2493F3041DAC236500CBCC08 /* LandingVideoViewController.swift */,
 				2493F2D31DABC85000CBCC08 /* ViewController.swift */,
 				2493F2D51DABC85000CBCC08 /* Main.storyboard */,
 				2493F2D81DABC85000CBCC08 /* Assets.xcassets */,
@@ -137,6 +147,15 @@
 			);
 			name = Resources;
 			path = StyleKist;
+			sourceTree = "<group>";
+		};
+		2493F3061DAC736900CBCC08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2493F3091DAEBBE800CBCC08 /* AVFoundation.framework */,
+				2493F3071DAC736900CBCC08 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +300,7 @@
 			files = (
 				2493F2D41DABC85000CBCC08 /* ViewController.swift in Sources */,
 				2493F2D21DABC85000CBCC08 /* AppDelegate.swift in Sources */,
+				2493F3051DAC236500CBCC08 /* LandingVideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +549,7 @@
 				2493F2F81DABC85100CBCC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2493F2F91DABC85100CBCC08 /* Build configuration list for PBXNativeTarget "StyleKistTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +558,7 @@
 				2493F2FB1DABC85100CBCC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2493F2FC1DABC85100CBCC08 /* Build configuration list for PBXNativeTarget "StyleKistUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +567,7 @@
 				2493F2FE1DABC85100CBCC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

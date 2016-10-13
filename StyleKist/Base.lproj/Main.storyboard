@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,13 +17,65 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfL-fT-5CR">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wfL-fT-5CR" secondAttribute="height" multiplier="1080:1178" id="eOz-bV-Fyx"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="QhF-7f-CkX" kind="embed" id="CnJ-VA-NDZ"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJX-HR-oIN">
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="21" id="1Zt-bV-rer"/>
+                                    <constraint firstAttribute="width" priority="250" constant="42" id="vVx-bI-oji"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="topMargin" secondItem="wfL-fT-5CR" secondAttribute="top" id="MaZ-wi-vz2"/>
+                            <constraint firstAttribute="trailing" secondItem="wfL-fT-5CR" secondAttribute="trailing" id="RX2-3j-ibV"/>
+                            <constraint firstItem="PJX-HR-oIN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Teh-s8-8qW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PJX-HR-oIN" secondAttribute="bottom" constant="88" id="XIR-LF-UHW"/>
+                            <constraint firstItem="wfL-fT-5CR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xoz-ta-cCJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-388.125" y="-20.070422535211268"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="3g0-Bd-cL6">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="RYd-MM-MfM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46h-su-FwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="42"/>
+        </scene>
+        <!--Landing Video View Controller-->
+        <scene sceneID="yQ0-k6-upr">
+            <objects>
+                <viewController id="QhF-7f-CkX" customClass="LandingVideoViewController" customModule="StyleKist" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oL6-eR-0gK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="409"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="video" value="landing_video.mp4"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iak-R2-fM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="685"/>
         </scene>
     </scenes>
 </document>
